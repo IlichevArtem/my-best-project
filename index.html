@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToDo</title>
+    <!--icons-->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="./jslogo.svg" />
+  </head>
+  <body>
+    <main>
+      <form id="form">
+        <p class="alert alert-danger">Пожалуйста добавьте элемент</p>
+        <h3 class="title">Список задач</h3>
+        <div class="control">
+          <input type="text" id="entry" placeholder="Внесите свою задачу" />
+          <button type="submit" class="btn submit-btn">Внести</button>
+          <button type="button" class="btn cancel-btn d-none">Удалить</button>
+        </div>
+      </form>
+
+      <ul id="todo-list" class="list-container">
+       <!-- <li class="list-item">
+          <p class="text">Сгонять с цыганами на серьезную терку</p>
+          <i class="bx bxs-edit bx-sm"></i>
+          <i class="bx bxs-check bx-sm"></i>
+          <i class="bx bxs-trash bx-sm"></i>
+        </li>-->
+      </ul>
+      <button class="btn clear-btn d-none">ОЧИСТИТЬ</button>
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>
